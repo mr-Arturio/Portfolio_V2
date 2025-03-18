@@ -3,8 +3,8 @@ import Link from "next/link";
 import { NavigationProps } from "../types";
 import { Theme } from "../constants/enums";
 
-const Navigation: React.FC<NavigationProps> = ({ toggleTheme, theme }) => {
-  const [menuOpen, setMenuOpen] = useState<boolean>(false);
+const Navigation = ({ toggleTheme, theme }: NavigationProps) => {
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);

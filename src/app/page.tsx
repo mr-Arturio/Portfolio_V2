@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Navigation from "../components/Navigation";
+import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
 import { Theme } from "../constants/enums";
@@ -33,6 +34,7 @@ export default function HomePage() {
     <>
       <Navigation toggleTheme={toggleTheme} theme={theme} />
       <main>
+      <Contact theme={theme} />
       </main>
       <Footer />
     </>
