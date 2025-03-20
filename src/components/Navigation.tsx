@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import { NavigationProps } from "../types";
-import { Theme } from "../constants/enums";
+import { ThemeToggleProps, ColorScheme } from "../types/theme";
 
-const Navigation = ({ toggleTheme, theme }: NavigationProps) => {
+const Navigation = ({ toggleTheme, theme }: ThemeToggleProps) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  const toggleMenu = () => setMenuOpen((prev) => !prev);
 
   return (
     <nav id="desktop-nav">
@@ -32,7 +29,7 @@ const Navigation = ({ toggleTheme, theme }: NavigationProps) => {
             <img
               className="icon color-icon"
               src={
-                theme === Theme.Dark
+                theme === ColorScheme.Dark
                   ? "/assets/theme_dark.png"
                   : "/assets/theme_light.png"
               }
@@ -80,7 +77,7 @@ const Navigation = ({ toggleTheme, theme }: NavigationProps) => {
               <img
                 className="icon color-icon"
                 src={
-                  theme === Theme.Dark
+                  theme === ColorScheme.Dark
                     ? "/assets/theme_dark.png"
                     : "/assets/theme_light.png"
                 }

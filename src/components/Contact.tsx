@@ -1,11 +1,7 @@
 import React from "react";
-import { Theme } from "@/constants/enums";
+import { ThemeProps, ColorScheme } from "@/types/theme";
 
-interface ContactProps {
-  theme: Theme;
-}
-
-const Contact = ({ theme }: ContactProps) => {
+const Contact = ({ theme }: ThemeProps) => {
   return (
     <section id="contact">
       <p className="section__text__p1">Get in Touch</p>
@@ -14,7 +10,7 @@ const Contact = ({ theme }: ContactProps) => {
         <div className="contact-info-container">
           <img
             src={
-              theme === Theme.Dark
+              theme === ColorScheme.Dark
                 ? "/assets/email_dark.png"
                 : "/assets/email.png"
             }
@@ -28,7 +24,7 @@ const Contact = ({ theme }: ContactProps) => {
         <div className="contact-info-container">
           <img
             src={
-              theme === Theme.Dark
+              theme === ColorScheme.Dark
                 ? "/assets/linkedin_dark.png"
                 : "/assets/linkedin.png"
             }

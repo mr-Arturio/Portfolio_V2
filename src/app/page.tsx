@@ -4,28 +4,29 @@ import { useState, useEffect } from "react";
 import Navigation from "../components/Navigation";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import AboutMe from "@/components/AboutMe";
 
-import { Theme } from "../constants/enums";
+import { ColorScheme } from "@/types/theme";
 
 export default function HomePage() {
-  const [theme, setTheme] = useState<Theme>(Theme.Light);
+  const [theme, setTheme] = useState<ColorScheme>(ColorScheme.Light);
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") as Theme | null;
-    if (savedTheme === Theme.Dark) {
-      setTheme(Theme.Dark);
+    const savedTheme = localStorage.getItem("theme") as ColorScheme | null;
+    if (savedTheme === ColorScheme.Dark) {
+      setTheme(ColorScheme.Dark);
       document.body.setAttribute("theme", "dark");
     }
   }, []);
 
   const toggleTheme = () => {
-    if (theme === Theme.Dark) {
-      setTheme(Theme.Light);
-      localStorage.setItem("theme", Theme.Light);
+    if (theme === ColorScheme.Dark) {
+      setTheme(ColorScheme.Light);
+      localStorage.setItem("theme", ColorScheme.Light);
       document.body.removeAttribute("theme");
     } else {
-      setTheme(Theme.Dark);
-      localStorage.setItem("theme", Theme.Dark);
+      setTheme(ColorScheme.Dark);
+      localStorage.setItem("theme", ColorScheme.Dark);
       document.body.setAttribute("theme", "dark");
     }
   };
@@ -34,6 +35,7 @@ export default function HomePage() {
     <>
       <Navigation toggleTheme={toggleTheme} theme={theme} />
       <main>
+        <AboutMe theme={theme}/>
       <Contact theme={theme} />
       </main>
       <Footer />
