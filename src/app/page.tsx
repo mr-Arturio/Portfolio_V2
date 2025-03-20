@@ -5,6 +5,7 @@ import Navigation from "../components/Navigation";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import AboutMe from "@/components/AboutMe";
+import Projects from "@/components/Projects";
 
 import { ColorScheme } from "@/types/theme";
 
@@ -35,8 +36,9 @@ export default function HomePage() {
     <>
       <Navigation toggleTheme={toggleTheme} theme={theme} />
       <main>
-        <AboutMe theme={theme}/>
-      <Contact theme={theme} />
+        <AboutMe theme={theme} />
+        <Projects theme={theme} />
+        <Contact theme={theme} />
       </main>
       <Footer />
     </>
