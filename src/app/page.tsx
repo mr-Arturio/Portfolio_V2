@@ -37,7 +37,7 @@ export default function HomePage() {
       <Navigation toggleTheme={toggleTheme} theme={theme} />
       <main>
         <AboutMe theme={theme} />
-        <Projects theme={theme} />
+        <Projects />
         <Contact theme={theme} />
       </main>
       <Footer />
