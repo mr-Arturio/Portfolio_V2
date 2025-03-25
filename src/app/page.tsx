@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import AboutMe from "@/components/AboutMe";
 import Projects from "@/components/Projects";
 import Stack from "@/components/Stack";
+import Publications from "@/components/Publications"
 
 import { ColorScheme } from "@/types/theme";
 
@@ -40,6 +41,7 @@ export default function HomePage() {
         <AboutMe theme={theme} />
         <Stack theme={theme} />
         <Projects />
+        <Publications />
         <Contact theme={theme} />
       </main>
       <Footer />
