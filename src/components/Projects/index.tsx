@@ -1,4 +1,4 @@
-import ProjectCard from "../elements/ProjectCard";
+import ProjectCard from "./ProjectCard";
 import { projectsData } from "@/data/projectsData";
 
 export default function Projects() {
