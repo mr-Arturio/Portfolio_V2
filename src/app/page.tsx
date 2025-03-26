@@ -7,7 +7,8 @@ import Footer from "../components/Footer";
 import AboutMe from "@/components/AboutMe";
 import Projects from "@/components/Projects";
 import Stack from "@/components/Stack";
-import Publications from "@/components/Publications"
+import Publications from "@/components/Publications";
+import MyIntroduction from "@/components/MyIntroduction";
 
 import { ColorScheme } from "@/types/theme";
 
@@ -38,6 +39,7 @@ export default function HomePage() {
     <>
       <Navigation toggleTheme={toggleTheme} theme={theme} />
       <main>
+        <MyIntroduction theme={theme} />
         <AboutMe theme={theme} />
         <Stack theme={theme} />
         <Projects />
