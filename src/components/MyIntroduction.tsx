@@ -39,7 +39,7 @@ const MyIntroduction = ({ theme }: ThemeProps) => {
                 : "./assets/linkedin.png"
             }
             alt="My LinkedIn profile"
-            className="icon linkedin-icon"
+            className="icon linkedin-icon icon-hover"
             onClick={() =>
               (window.location.href =
                 "https://www.linkedin.com/in/artur-tereshchenko-968934199/")
@@ -52,7 +52,7 @@ const MyIntroduction = ({ theme }: ThemeProps) => {
                 : "/assets/github.png"
             }
             alt="My Github profile"
-            className="icon github-icon"
+            className="icon github-icon icon-hover"
             onClick={() =>
               (window.location.href = "https://github.com/mr-Arturio")
             }

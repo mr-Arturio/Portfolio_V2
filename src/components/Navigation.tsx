@@ -27,7 +27,7 @@ const Navigation = ({ toggleTheme, theme }: ThemeToggleProps) => {
           </li>
           <li>
             <img
-              className="icon color-icon"
+              className="icon color-icon icon-hover"
               src={
                 theme === ColorScheme.Dark
                   ? "/assets/theme_dark.png"

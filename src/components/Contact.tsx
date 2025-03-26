@@ -29,7 +29,7 @@ const Contact = ({ theme }: ThemeProps) => {
                 : "/assets/linkedin.png"
             }
             alt="LinkedIn icon"
-            className="icon linkedin-icon"
+            className="icon contact-icon"
           />
           <p>
             <a href="https://www.linkedin.com/in/artur-tereshchenko-968934199/">

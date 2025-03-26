@@ -46,6 +46,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--background-color);
+  cursor: default;
 }
 
 html {
@@ -279,6 +280,12 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+  
+}
+
+.icon-hover:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.1);
 }
 
 /* BUTTONS */
@@ -326,6 +333,10 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+.icon2 {
+  cursor: default;
 }
 
 .about-pic {
@@ -456,6 +467,15 @@ article .icon {
 
 .contact-info-container p {
   font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+  cursor: default;
 }
 
 /* FOOTER SECTION */

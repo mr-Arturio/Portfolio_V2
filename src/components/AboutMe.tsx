@@ -28,7 +28,7 @@ const AboutMe = ({ theme }: ThemeProps) => {
                     : "/assets/experience.png"
                 }
                 alt="Experience icon"
-                className="icon"
+                className="icon contact-icon"
               />
               <h3>Experience</h3>
               <p>
@@ -43,7 +43,7 @@ const AboutMe = ({ theme }: ThemeProps) => {
                     : "/assets/education.png"
                 }
                 alt="Education icon"
-                className="icon"
+                className="icon contact-icon"
               />
               <h3>Education</h3>
               <p>
