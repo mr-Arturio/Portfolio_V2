@@ -14,19 +14,19 @@ const platformItems: StackItem[] = [
   },
   {
     src: "/assets/Stack/github.png",
-    srcDark: "./assets/Stack/github_dark.png",
+    srcDark: "/assets/Stack/github_dark.png",
     alt: "Git",
     label: "Git",
   },
   {
     src: "/assets/Stack/openai.svg",
-    srcDark: "./assets/Stack/icons8-chatgpt.svg",
+    srcDark: "/assets/Stack/icons8-chatgpt.svg",
     alt: "OpenAI",
     label: "OpenAI",
   },
   {
     src: "/assets/Stack/vercel.svg",
-    srcDark: "./assets/Stack/communityIcon_lck50fpdcmv71.jpeg",
+    srcDark: "/assets/Stack/communityIcon_lck50fpdcmv71.jpeg",
     alt: "Vercel",
     label: "Vercel",
   },

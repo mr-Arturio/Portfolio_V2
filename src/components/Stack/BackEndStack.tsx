@@ -13,23 +13,23 @@ const backEndItems: StackItem[] = [
     label: "PostgreSQL",
   },
   {
-    src: "./assets/Stack/mongodb-original.svg",
+    src: "/assets/Stack/mongodb-original.svg",
     alt: "MongoDB",
     label: "MongoDB",
   },
   {
-    src: "./assets/Stack/nodejs-icon.svg",
+    src: "/assets/Stack/nodejs-icon.svg",
     alt: "Node JS",
     label: "Node JS",
   },
   {
-    src: "./assets/Stack/express.svg",
-    srcDark: "./assets/Stack/icons8-express-js.svg",
+    src: "/assets/Stack/express.svg",
+    srcDark: "/assets/Stack/icons8-express-js.svg",
     alt: "Express JS",
     label: "Express JS",
   },
   {
-    src: "./assets/Stack/Product_Logomark_Cloud_Firestore_Full_Color.svg",
+    src: "/assets/Stack/Product_Logomark_Cloud_Firestore_Full_Color.svg",
     alt: "Firebase",
     label: "Firebase",
   },
