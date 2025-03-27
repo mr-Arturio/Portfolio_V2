@@ -4,7 +4,7 @@ This is version 2 of my personal portfolio website, rebuilt using **Next.js**, *
 You can check out the [legacy version](https://github.com/mr-Arturio/Portfolio-Website) built with plain JavaScript.
 
 ## 🌐 Live Demo  
-[https://portfolio-website-kappa-two-14.vercel.app/](https://portfolio-website-kappa-two-14.vercel.app/)
+[https://portfolio-v2-three-brown.vercel.app/](https://portfolio-v2-three-brown.vercel.app/)
 
 ## ✨ Features
 
