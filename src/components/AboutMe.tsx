@@ -11,8 +11,8 @@ const AboutMe = ({ theme }: ThemeProps) => {
           <img
             src={
               theme === ColorScheme.Dark
-                ? "/assets/IMG_20230114_232740_181.jpg"
-                : "/assets/IMG_20230114_232740_181.jpg"
+                ? "/assets/Myphoto.jpg"
+                : "/assets/Myphoto.jpg"
             }
             alt="Profile"
             className="about-pic"

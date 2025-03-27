@@ -14,8 +14,12 @@ const MyIntroduction = ({ theme }: ThemeProps) => {
     <section id="profile">
       <div className="section__pic-container">
         <img
+          src={
+            theme === ColorScheme.Dark
+              ? "./assets/MySchemaPhoto.png"
+              : "./assets/IMG_20230114_232740_181.jpg"
+          }
           className="profile_pic"
-          src="/assets/IMG_20230114_232740_181.jpg"
           alt="Artur T profile picture"
         />
       </div>
