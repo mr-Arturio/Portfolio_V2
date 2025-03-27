@@ -62,7 +62,7 @@ const MyIntroduction = ({ theme }: ThemeProps) => {
             width={32}
             height={32}
             alt="My Github profile"
-            className="icon github-icon icon-hover"
+            className="icon icon-hover"
             onClick={() =>
               (window.location.href = "https://github.com/mr-Arturio")
             }

@@ -9,6 +9,7 @@ import Projects from "@/components/Projects";
 import Stack from "@/components/Stack";
 import Publications from "@/components/Publications";
 import MyIntroduction from "@/components/MyIntroduction";
+import ParticlesCanvas from "@/components/ParticlesCanvas";
 
 import { ColorScheme } from "@/types/theme";
 
@@ -37,7 +38,7 @@ export default function HomePage() {
 
   return (
     <>
-      <Navigation toggleTheme={toggleTheme} theme={theme} />
+        <Navigation toggleTheme={toggleTheme} theme={theme} />
       <main>
         <MyIntroduction theme={theme} />
         <AboutMe theme={theme} />
@@ -47,6 +48,7 @@ export default function HomePage() {
         <Contact theme={theme} />
       </main>
       <Footer />
+      {theme === ColorScheme.Dark && <ParticlesCanvas />}
     </>
   );
 }
