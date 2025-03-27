@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 import { ColorScheme } from "@/types/theme";
 import { StackItem } from "@/types/stack";
 
@@ -57,7 +57,13 @@ export default function FrontEndStack({ theme }: FrontEndStackProps) {
               : item.src;
           return (
             <article key={index}>
-              <img src={imageSrc} alt={item.alt} className="icon" />
+              <Image
+                src={imageSrc}
+                alt={item.alt}
+                width={item.label === "Next.js" ? 80 : 35}
+                height={50}
+                className="icon"
+              />
               <div>
                 <h4>{item.label}</h4>
               </div>

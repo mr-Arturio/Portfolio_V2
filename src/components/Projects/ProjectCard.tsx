@@ -1,6 +1,5 @@
+import Image from "next/image";
 import { Project } from "@/types/project";
-
-interface ProjectCardProps extends Project {}
 
 export default function ProjectCard({
   imageSrc,
@@ -9,17 +8,23 @@ export default function ProjectCard({
   description,
   githubLink,
   liveDemoLink,
-}: ProjectCardProps) {
+}: Project) {
   return (
     <div className="details-container color-container project-container">
       <div className="article-container">
-        <img src={imageSrc} alt={altText} className="project-img" />
+        <Image
+          src={imageSrc}
+          alt={altText}
+          width={360}
+          height={300}
+          className="project-img"
+        />
       </div>
       <h2 className="experience-sub-title project-title">{title}</h2>
       <p className="project-description">{description}</p>
       <br />
       <div className="btn-container">
-      {githubLink && (
+        {githubLink && (
           <button
             className="btn btn-color-2 project-btn"
             onClick={() => window.open(githubLink, "_blank")}

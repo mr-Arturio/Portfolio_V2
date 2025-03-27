@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 import { ThemeProps, ColorScheme } from "@/types/theme";
 
 const MyIntroduction = ({ theme }: ThemeProps) => {
@@ -13,18 +13,20 @@ const MyIntroduction = ({ theme }: ThemeProps) => {
   return (
     <section id="profile">
       <div className="section__pic-container">
-        <img
+        <Image
           src={
             theme === ColorScheme.Dark
-              ? "./assets/MySchemaPhoto.png"
-              : "./assets/IMG_20230114_232740_181.jpg"
+              ? "/assets/MySchemaPhoto.png"
+              : "/assets/IMG_20230114_232740_181.jpg"
           }
+          width={420}
+          height={420}
           className="profile_pic"
           alt="Artur T profile picture"
         />
       </div>
       <div className="section__text">
-        <p className="section__text__p1">Hello, I'm</p>
+        <p className="section__text__p1">Hello, I&apos;m</p>
         <h1 className="title">Artur Tereshchenko</h1>
         <p className="section__text__p2">Full Stack Web Developer</p>
         <div className="btn-container">
@@ -36,12 +38,14 @@ const MyIntroduction = ({ theme }: ThemeProps) => {
           </button>
         </div>
         <div id="socials-container">
-          <img
+          <Image
             src={
               theme === ColorScheme.Dark
-                ? "./assets/linkedin_dark.png"
-                : "./assets/linkedin.png"
+                ? "/assets/linkedin_dark.png"
+                : "/assets/linkedin.png"
             }
+            width={32}
+            height={32}
             alt="My LinkedIn profile"
             className="icon linkedin-icon icon-hover"
             onClick={() =>
@@ -49,12 +53,14 @@ const MyIntroduction = ({ theme }: ThemeProps) => {
                 "https://www.linkedin.com/in/artur-tereshchenko-968934199/")
             }
           />
-          <img
+          <Image
             src={
               theme === ColorScheme.Dark
-                ? "./assets/github_dark.png"
+                ? "/assets/github_dark.png"
                 : "/assets/github.png"
             }
+            width={32}
+            height={32}
             alt="My Github profile"
             className="icon github-icon icon-hover"
             onClick={() =>

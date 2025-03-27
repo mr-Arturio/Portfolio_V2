@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 import { ColorScheme } from "@/types/theme";
 import { StackItem } from "@/types/stack";
 
@@ -13,35 +13,35 @@ const platformItems: StackItem[] = [
     label: "Google Cloud",
   },
   {
-    src: "./assets/Stack/github.png",
+    src: "/assets/Stack/github.png",
     srcDark: "./assets/Stack/github_dark.png",
     alt: "Git",
     label: "Git",
   },
   {
-    src: "./assets/Stack/openai.svg",
+    src: "/assets/Stack/openai.svg",
     srcDark: "./assets/Stack/icons8-chatgpt.svg",
     alt: "OpenAI",
     label: "OpenAI",
   },
   {
-    src: "./assets/Stack/vercel.svg",
+    src: "/assets/Stack/vercel.svg",
     srcDark: "./assets/Stack/communityIcon_lck50fpdcmv71.jpeg",
     alt: "Vercel",
     label: "Vercel",
   },
   {
-    src: "./assets/Stack/stripe.svg",
+    src: "/assets/Stack/stripe.svg",
     alt: "Stripe",
     label: "Stripe",
   },
   {
-    src: "./assets/Stack/auth0.svg",
+    src: "/assets/Stack/auth0.svg",
     alt: "Auth0",
     label: "Auth0",
   },
   {
-    src: "./assets/Stack/wordpress.svg",
+    src: "/assets/Stack/wordpress.svg",
     alt: "WordPress",
     label: "WordPress",
   },
@@ -59,7 +59,13 @@ export default function PlatformStack({ theme }: PlatformStackProps) {
               : item.src;
           return (
             <article key={index}>
-              <img src={imageSrc} alt={item.alt} className="icon" />
+              <Image
+                src={imageSrc}
+                alt={item.alt}
+                width={item.label === "Stripe" ? 80 : 35}
+                height={50}
+                className="icon"
+              />
               <div>
                 <h4>{item.label}</h4>
               </div>

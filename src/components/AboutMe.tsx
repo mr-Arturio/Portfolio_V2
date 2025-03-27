@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 import { ThemeProps, ColorScheme } from "@/types/theme";
 
 const AboutMe = ({ theme }: ThemeProps) => {
@@ -8,12 +8,14 @@ const AboutMe = ({ theme }: ThemeProps) => {
       <h1 className="title">About Me</h1>
       <div className="section-container">
         <div className="section__pic-container">
-          <img
+          <Image
             src={
               theme === ColorScheme.Dark
                 ? "/assets/Myphoto.jpg"
                 : "/assets/Myphoto.jpg"
             }
+            width={300}
+            height={300}
             alt="Profile"
             className="about-pic"
           />
@@ -21,12 +23,14 @@ const AboutMe = ({ theme }: ThemeProps) => {
         <div className="about-details-container">
           <div className="about-containers">
             <div className="details-container">
-              <img
+              <Image
                 src={
                   theme === ColorScheme.Dark
                     ? "/assets/experience_dark.png"
                     : "/assets/experience.png"
                 }
+                width={32}
+                height={32}
                 alt="Experience icon"
                 className="icon contact-icon"
               />
@@ -36,12 +40,14 @@ const AboutMe = ({ theme }: ThemeProps) => {
               </p>
             </div>
             <div className="details-container">
-              <img
+              <Image
                 src={
                   theme === ColorScheme.Dark
                     ? "/assets/education_dark.png"
                     : "/assets/education.png"
                 }
+                width={32}
+                height={32}
                 alt="Education icon"
                 className="icon contact-icon"
               />

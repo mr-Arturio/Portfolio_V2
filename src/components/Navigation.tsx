@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { ThemeToggleProps, ColorScheme } from "../types/theme";
 
@@ -26,13 +27,15 @@ const Navigation = ({ toggleTheme, theme }: ThemeToggleProps) => {
             <Link href="#contact">Contact</Link>
           </li>
           <li>
-            <img
+            <Image
               className="icon color-icon icon-hover"
               src={
                 theme === ColorScheme.Dark
                   ? "/assets/theme_dark.png"
                   : "/assets/theme_light.png"
               }
+              width={32}
+              height={32}
               alt="Toggle Theme"
               onClick={toggleTheme}
             />
@@ -74,13 +77,15 @@ const Navigation = ({ toggleTheme, theme }: ThemeToggleProps) => {
               </Link>
             </li>
             <li>
-              <img
+              <Image
                 className="icon color-icon"
                 src={
                   theme === ColorScheme.Dark
                     ? "/assets/theme_dark.png"
                     : "/assets/theme_light.png"
                 }
+                width={32}
+                height={32}
                 alt="Toggle Theme"
                 onClick={toggleTheme}
               />

@@ -11,7 +11,7 @@ export const projectsData: Project[] = [
     liveDemoLink: "https://www.incredibleplaygroupfinder.ca/en",
   },
   {
-    imageSrc: "./assets/DreamTales.png",
+    imageSrc: "/assets/DreamTales.png",
     altText: "Project 2",
     title: "DreamTales",
     description:

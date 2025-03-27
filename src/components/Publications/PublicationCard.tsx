@@ -1,4 +1,5 @@
-import { PublicationCardProps } from "@/types/publications"
+import Image from "next/image";
+import { PublicationCardProps } from "@/types/publications";
 
 export default function PublicationCard({
   imageSrc,
@@ -9,7 +10,13 @@ export default function PublicationCard({
   return (
     <div className="details-container color-container project-container">
       <div className="article-container">
-        <img src={imageSrc} alt={altText} className="publication-img" />
+        <Image
+          src={imageSrc}
+          alt={altText}
+          className="publication-img"
+          width={360}
+          height={300}
+        />
       </div>
       <h2 className="experience-sub-title project-title">{title}</h2>
       <div className="btn-container">
