@@ -49,7 +49,7 @@ export default function FrontEndStack({ theme }: FrontEndStackProps) {
   return (
     <div className="details-container">
       <h2 className="experience-sub-title">Front-End</h2>
-      <div className="article-container">
+      <div className="stack-container">
         {frontEndItems.map((item, index) => {
           const imageSrc =
             theme === ColorScheme.Dark && item.srcDark

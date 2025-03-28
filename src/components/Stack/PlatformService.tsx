@@ -51,7 +51,7 @@ export default function PlatformStack({ theme }: PlatformStackProps) {
   return (
     <div className="details-container">
       <h2 className="experience-sub-title">Platform Services</h2>
-      <div className="article-container">
+      <div className="stack-container">
         {platformItems.map((item, index) => {
           const imageSrc =
             theme === ColorScheme.Dark && item.srcDark

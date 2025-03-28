@@ -39,7 +39,7 @@ export default function BackEndStack({ theme }: BackEndStackProps) {
   return (
     <div className="details-container">
       <h2 className="experience-sub-title">Back-End</h2>
-      <div className="article-container">
+      <div className="stack-container">
         {backEndItems.map((item, index) => {
           const imageSrc =
             theme === ColorScheme.Dark && item.srcDark

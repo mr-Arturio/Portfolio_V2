@@ -18,7 +18,7 @@ export default function PublicationCard({
           height={300}
         />
       </div>
-      <h2 className="experience-sub-title project-title">{title}</h2>
+      <h2 className="publication-title">{title}</h2>
       <div className="btn-container">
         <button
           className="btn btn-color-2 project-btn"
