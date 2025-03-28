@@ -5,46 +5,47 @@ import { ThemeToggleProps, ColorScheme } from "../types/theme";
 
 const Navigation = ({ toggleTheme, theme }: ThemeToggleProps) => {
   const [menuOpen, setMenuOpen] = useState(false);
-
   const toggleMenu = () => setMenuOpen((prev) => !prev);
 
   return (
-    <nav id="desktop-nav">
+    <>
       {/* Desktop Navigation */}
-      <div className="logo">Artur T</div>
-      <div>
-        <ul className="nav-links">
-          <li>
-            <Link href="#about">About</Link>
-          </li>
-          <li>
-            <Link href="#experience">Experience</Link>
-          </li>
-          <li>
-            <Link href="#projects">Projects</Link>
-          </li>
-          <li>
-            <Link href="#contact">Contact</Link>
-          </li>
-          <li>
-            <Image
-              className="icon color-icon icon-hover"
-              src={
-                theme === ColorScheme.Dark
-                  ? "/assets/theme_dark.png"
-                  : "/assets/theme_light.png"
-              }
-              width={32}
-              height={32}
-              alt="Toggle Theme"
-              onClick={toggleTheme}
-            />
-          </li>
-        </ul>
-      </div>
+      <nav id="desktop-nav">
+        <div className="logo">Artur T</div>
+        <div>
+          <ul className="nav-links">
+            <li>
+              <Link href="#about">About</Link>
+            </li>
+            <li>
+              <Link href="#experience">Experience</Link>
+            </li>
+            <li>
+              <Link href="#projects">Projects</Link>
+            </li>
+            <li>
+              <Link href="#contact">Contact</Link>
+            </li>
+            <li>
+              <Image
+                className="icon color-icon icon-hover"
+                src={
+                  theme === ColorScheme.Dark
+                    ? "/assets/theme_dark.png"
+                    : "/assets/theme_light.png"
+                }
+                width={32}
+                height={32}
+                alt="Toggle Theme"
+                onClick={toggleTheme}
+              />
+            </li>
+          </ul>
+        </div>
+      </nav>
 
       {/* Mobile Navigation */}
-      <div id="hamburger-nav">
+      <nav id="hamburger-nav">
         <div className="logo">Artur T</div>
         <div className="hamburger-menu">
           <div
@@ -92,8 +93,8 @@ const Navigation = ({ toggleTheme, theme }: ThemeToggleProps) => {
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 };
 
