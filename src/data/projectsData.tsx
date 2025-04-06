@@ -3,7 +3,7 @@ import { Project } from "@/types/project";
 export const projectsData: Project[] = [
   {
     imageSrc: "/assets/IPF.jpg",
-    altText: "Project 1",
+    altText: "The Incredible Playgroup Finder app",
     title: "The Incredible Playgroup Finder",
     description:
       "A bilingual, non-profit web app that helps Ottawa parents find local playgroup events.",
@@ -12,7 +12,7 @@ export const projectsData: Project[] = [
   },
   {
     imageSrc: "/assets/DreamTales.png",
-    altText: "Project 2",
+    altText: "Dream Tales app",
     title: "DreamTales",
     description:
       "The award-winning app that brings personalized, educational, and enchanting bedtime stories to life for your child's imagination.",
@@ -21,7 +21,7 @@ export const projectsData: Project[] = [
   },
   {
     imageSrc: "/assets/blogai.png",
-    altText: "Project 3",
+    altText: "Blog Ai Studio app",
     title: "BlogAiStudio",
     description:
       " An Software-As-A-Service application to generate an SEO-friendly blog posts",
@@ -30,8 +30,8 @@ export const projectsData: Project[] = [
   },
   {
     imageSrc: "/assets/weatherApp.png",
-    altText: "Project 4",
-    title: "The Incredible Playgroup Finder",
+    altText: "Wheather Application",
+    title: "WheatherApp",
     description:
       " An intuitive weather app allowing users to search for forecasts by city, utilize their current location, and access both current day and 7-day weather forecasts.",
     githubLink: "https://github.com/mr-Arturio/Weather_App",
@@ -47,8 +47,8 @@ export const projectsData: Project[] = [
     liveDemoLink: "",
   },
   {
-    imageSrc: "/assets/EcoFuture.png",
-    altText: "Project 6",
+    imageSrc: "/assets/EcoFuture_Updated.png",
+    altText: "EcoFuture web page project",
     title: "EcoFuture",
     description:
       "Website for Paper Cup Manufacture",
