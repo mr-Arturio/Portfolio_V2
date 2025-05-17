@@ -422,7 +422,37 @@ section {
   color: var(--secondary-color);
   font-weight: 600;
   font-size: 1.75rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+.publication-entry {
+  background-color: var(--primary-color-2);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.publication-entry:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.publication-description {
+  color: var(--secondary-color-2);
+  font-size: 1rem;
+  margin: 0.5rem 0 0.5rem 0;
+  line-height: 1.5;
+}
+
+.publication-link {
+  font-weight: 500;
+  color: rgb(0, 93, 183);
+  text-decoration: none;
+}
+
+.publication-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.4rem;
+  text-decoration-color: rgb(255, 215, 0);
 }
 
 .experience-sub-title {
