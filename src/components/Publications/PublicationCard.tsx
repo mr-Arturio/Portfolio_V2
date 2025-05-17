@@ -1,32 +1,22 @@
-import Image from "next/image";
 import { PublicationCardProps } from "@/types/publications";
 
 export default function PublicationCard({
-  imageSrc,
-  altText,
   title,
+  description,
   mediumLink,
 }: PublicationCardProps) {
   return (
-    <div className="details-container color-container project-container">
-      <div className="article-container">
-        <Image
-          src={imageSrc}
-          alt={altText}
-          className="publication-img"
-          width={360}
-          height={300}
-        />
-      </div>
+    <div className="publication-entry">
       <h2 className="publication-title">{title}</h2>
-      <div className="btn-container">
-        <button
-          className="btn btn-color-2 project-btn"
-          onClick={() => window.open(mediumLink, "_blank")}
-        >
-          Medium
-        </button>
-      </div>
+      <p className="publication-description">{description}</p>
+      <a
+        href={mediumLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="publication-link"
+      >
+        Read on Medium →
+      </a>
     </div>
   );
 }

@@ -3,4 +3,5 @@ export interface PublicationCardProps {
   altText: string;
   title: string;
   mediumLink: string;
+  description: string;
 }

@@ -14,6 +14,7 @@ export default function Publications() {
               imageSrc={pub.imageSrc}
               altText={pub.altText}
               title={pub.title}
+              description={pub.description}
               mediumLink={pub.mediumLink}
             />
           ))}
