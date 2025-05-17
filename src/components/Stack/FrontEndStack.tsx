@@ -60,7 +60,7 @@ export default function FrontEndStack({ theme }: FrontEndStackProps) {
               <Image
                 src={imageSrc}
                 alt={item.alt}
-                width={item.label === "Next.js" ? 80 : 35}
+                width={imageSrc === "/assets/Stack/nextjs.svg" ? 80 : 35}
                 height={50}
                 className="icon"
               />
