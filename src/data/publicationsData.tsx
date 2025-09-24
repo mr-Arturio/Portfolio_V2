@@ -25,4 +25,13 @@ export const publicationsData = [
     mediumLink:
       "https://medium.com/@mr.arturio/why-i-chose-google-sheets-as-a-database-for-a-real-world-web-app-and-why-you-might-too-4a25315cfc48",
   },
+  {
+    imageSrc: "/assets/Sheks.jpeg",
+    altText: "Publication 4",
+    title:
+      "Finding Your People: The Power of Tech Community Across Canada",
+      description: "In this article, I share how you can discover local and virtual tech groups, contribute meaningfully, turn conversations into career momentu and some other tips of networking",
+    mediumLink:
+      "https://medium.com/@mr.arturio/finding-your-people-the-power-of-tech-community-across-canada-21aaaeb87cfe",
+  },
 ];
