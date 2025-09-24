@@ -14,6 +14,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <script
+        dangerouslySetInnerHTML={{
+          __html:
+            '(function(){try{var t=localStorage.getItem("theme");if(t==="dark"){document.body.setAttribute("theme","dark")}else{document.body.removeAttribute("theme")}}catch(e){}})();',
+        }}
+      />
       <body suppressHydrationWarning={true}>{children}</body>
     </html>
   );

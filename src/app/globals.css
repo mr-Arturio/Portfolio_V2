@@ -249,7 +249,7 @@ body[theme="dark"] .logo::after {
 
 /* SECTIONS & COMPONENTS */
 section {
-  padding-top: 4vh;
+  padding-top: 3vh;
   height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
@@ -269,7 +269,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 60vh;
   z-index: 10;
 }
 
@@ -647,10 +647,14 @@ footer p {
   footer {
     height: 40vh;
   }
+  nav {
+    height: 10vh;
+  }
   #profile {
     display: block;
-    height: 75vh;
-    margin-bottom: 0;
+    height: auto;
+    min-height: 0;
+    margin: 0;
   }
 
   .profile_pic {
@@ -720,6 +724,10 @@ footer p {
     margin-bottom: 0;
   }
 
+  .publication-description {
+    display: none;
+  }
+
   .contact-info-container {
     margin: 0;
   }
@@ -744,16 +752,26 @@ footer p {
   }
   .section__pic-container {
     width: auto;
-    height: 46vw;
+    height: 42vw;
     justify-content: center;
   }
   .section__text__p2 {
-    font-size: 1.25rem;
+    font-size: 1.05rem;
   }
   .title {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   .text-container {
     text-align: justify;
+  }
+  .btn-container {
+    gap: 0.5rem;
+  }
+  .btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  .section__text__p1 {
+    font-size: 0.9rem;
   }
 }

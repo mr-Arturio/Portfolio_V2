@@ -24,6 +24,9 @@ const Navigation = ({ toggleTheme, theme }: ThemeToggleProps) => {
               <Link href="#projects">Projects</Link>
             </li>
             <li>
+              <Link href="#publications">Publications</Link>
+            </li>
+            <li>
               <Link href="#contact">Contact</Link>
             </li>
             <li>
@@ -48,15 +51,28 @@ const Navigation = ({ toggleTheme, theme }: ThemeToggleProps) => {
       <nav id="hamburger-nav">
         <div className="logo">Artur T</div>
         <div className="hamburger-menu">
-          <div
+          <button
+            type="button"
             className={`hamburger-icon ${menuOpen ? "open" : ""}`}
+            aria-label="Toggle navigation menu"
+            aria-expanded={menuOpen}
+            aria-controls="mobile-menu-links"
             onClick={toggleMenu}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                toggleMenu();
+              }
+            }}
           >
             <span></span>
             <span></span>
             <span></span>
-          </div>
-          <ul className={`menu-links ${menuOpen ? "open" : ""}`}>
+          </button>
+          <ul
+            id="mobile-menu-links"
+            className={`menu-links ${menuOpen ? "open" : ""}`}
+          >
             <li>
               <Link href="#about" onClick={toggleMenu}>
                 About
@@ -70,6 +86,11 @@ const Navigation = ({ toggleTheme, theme }: ThemeToggleProps) => {
             <li>
               <Link href="#projects" onClick={toggleMenu}>
                 Projects
+              </Link>
+            </li>
+            <li>
+              <Link href="#publications" onClick={toggleMenu}>
+                Publications
               </Link>
             </li>
             <li>
