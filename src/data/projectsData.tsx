@@ -10,6 +10,24 @@ export const projectsData: Project[] = [
     githubLink: "https://github.com/mr-Arturio/Incredible_Playgroup_Finder",
     liveDemoLink: "https://www.incredibleplaygroupfinder.ca/en",
   },
+    {
+    imageSrc: "/assets/TimeTravelPhone.png",
+    altText: "Time-Travel Phone app",
+    title: "Time-Travel Phone",
+    description:
+      "An old rotary desk phone brought back to life with a Raspberry Pi and modern speech AI. Lift the handset, dial a number, and famous person answers your call.",
+    githubLink: "https://github.com/mr-Arturio/time-travel-phone",
+    liveDemoLink: "https://github.com/mr-Arturio/time-travel-phone",
+  },
+  {
+    imageSrc: "/assets/decompDash.png",
+    altText: "Decomp Dash  app",
+    title: "Decomp Dash ",
+    description:
+      "Gamified recycling with streaks, badges, and leaderboards.",
+    githubLink: "https://github.com/mr-Arturio/decomp-dash",
+    liveDemoLink: "https://decomp-dash.vercel.app/",
+  },
   {
     imageSrc: "/assets/DreamTales.png",
     altText: "Dream Tales app",
