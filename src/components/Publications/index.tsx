@@ -4,11 +4,11 @@ import type { PublicationCardProps } from "@/types/publications";
 
 export default function Publications() {
   return (
-    <section id="publications">
+    <section>
       <p className="section__text__p1">Browse My Recent</p>
       <h1 className="title">Publications</h1>
       <div className="experience-details-container">
-        <div className="about-containers">
+        <div className="publications-containers">
           {publicationsData.map((pub: PublicationCardProps, index: number) => (
             <PublicationCard
               key={index}
