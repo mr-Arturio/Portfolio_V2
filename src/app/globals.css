@@ -250,7 +250,7 @@ body[theme="dark"] .logo::after {
 /* SECTIONS & COMPONENTS */
 section {
   padding-top: 3vh;
-  height: 96vh;
+  height: 86vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -420,13 +420,16 @@ section {
   min-height: 300px;
 }
 
+.project-description {
+text-align: justify;
+}
 /*Stack*/
 
 .publication-title {
   color: var(--secondary-color);
   font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .publication-entry {
@@ -445,7 +448,7 @@ section {
 .publication-description {
   color: var(--secondary-color-2);
   font-size: 1rem;
-  margin: 0.5rem 0 0.5rem 0;
+  margin-bottom: 0.5rem;
   line-height: 1.5;
 }
 

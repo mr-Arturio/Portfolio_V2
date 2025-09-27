@@ -51,19 +51,19 @@ export const projectsData: Project[] = [
     altText: "Wheather Application",
     title: "WheatherApp",
     description:
-      " An intuitive weather app allowing users to search for forecasts by city, utilize their current location, and access both current day and 7-day weather forecasts.",
+      "An intuitive weather app allowing users to search for forecasts by city, utilize their current location, and access both current day and 7-day weather forecasts.",
     githubLink: "https://github.com/mr-Arturio/Weather_App",
     liveDemoLink: "https://weather-app-liard-ten.vercel.app/",
   },
-  {
-    imageSrc: "/assets/Scheduler1.png",
-    altText: "Project 5",
-    title: "Scheduler",
-    description:
-      " A single-page application that allows users to book and manage appointments.",
-    githubLink: "https://github.com/mr-Arturio/scheduler",
-    liveDemoLink: "",
-  },
+  // {
+  //   imageSrc: "/assets/Scheduler1.png",
+  //   altText: "Project 5",
+  //   title: "Scheduler",
+  //   description:
+  //     " A single-page application that allows users to book and manage appointments.",
+  //   githubLink: "https://github.com/mr-Arturio/scheduler",
+  //   liveDemoLink: "https://github.com/mr-Arturio/scheduler",
+  // },
   {
     imageSrc: "/assets/EcoFuture_Updated.png",
     altText: "EcoFuture web page project",
