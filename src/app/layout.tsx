@@ -14,12 +14,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <script
-        dangerouslySetInnerHTML={{
-          __html:
-            '(function(){try{var t=localStorage.getItem("theme");if(t==="dark"){document.body.setAttribute("theme","dark")}else{document.body.removeAttribute("theme")}}catch(e){}})();',
-        }}
-      />
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              '(function(){try{var t=localStorage.getItem("theme");var d=t==="dark";var de=document.documentElement;if(d){de.setAttribute("theme","dark")}else{de.removeAttribute("theme")}document.addEventListener("DOMContentLoaded",function(){var b=document.body;if(!b)return;if(d){b.setAttribute("theme","dark")}else{b.removeAttribute("theme")}})}catch(e){}})();',
+          }}
+        />
+      </head>
       <body suppressHydrationWarning={true}>{children}</body>
     </html>
   );
