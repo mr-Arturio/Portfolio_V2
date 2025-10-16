@@ -3,7 +3,7 @@ import { ThemeProps, ColorScheme } from "@/types/theme";
 
 const MyIntroduction = ({ theme }: ThemeProps) => {
   const handleDownloadCV = () => {
-    window.open("/assets/Artur-Tereshchenko-Resume-2025.pdf", "_blank");
+    window.open("/assets/Artur-Tereshchenko-Resume..pdf", "_blank");
   };
 
   const handleContactScroll = () => {
